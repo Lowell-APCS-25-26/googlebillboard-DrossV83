@@ -5,8 +5,16 @@ package org.APCSLowell;
 
 public class GoogleBillboard {
     public boolean isPrime(long n) {
-        // Copy and paste your answer from CodingBat appropriatley here.
-        return false;
+        int i = 2;
+  if(n < 2) return false;
+  else if(i >=2){ 
+    while(i <= Math.sqrt(n)){
+        if(n % i == 0){
+       return false; }
+    i++;
+   } 
+  }
+  return true;
     }
     public long firstPrimeNumberIn(String n) {
         // Write your code here.
